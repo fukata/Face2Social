@@ -11,6 +11,5 @@ hc = cv.Load(FACE_XML)
 img = cv.LoadImage(LOAD_IMG, cv.CV_LOAD_IMAGE_UNCHANGED)
 faces = cv.HaarDetectObjects(img, hc, cv.CreateMemStorage())
 for (x,y,w,h),n in faces:
-    #cv.Rectangle(img, (x,y), (x+w,y+h), 255)
     cv.Rectangle(img, (x,y), (x+w,y+h), cv.RGB(255, 0, 0))
 cv.SaveImage(OUT_IMG, img)
