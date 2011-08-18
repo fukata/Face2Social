@@ -3,7 +3,7 @@
 import cv
 import sys
 
-FACE_XML = "haarcascade_frontalface_default.xml"
+FACE_XML = "data/haarcascade_frontalface_default.xml"
 LOAD_IMG = sys.argv[1]
 OUT_IMG = "out.jpg"
 
